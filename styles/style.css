@@ -7,6 +7,8 @@
   font-family: 'Raleway', 'Open Sans', sans-serif;
   font-size: 18px;
   font-weight: 400;
+  max-width: 1440px;
+  max-height: 757px;
 }
 
 .header__menu {
@@ -61,7 +63,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 757px;
+  height: 100%;
   position: relative;
   z-index: 0;
   color: #FFF;
@@ -119,7 +121,6 @@ letter-spacing: 0.7em;
 
 .cover__description-text {
   line-height: 1.27;
-
   font-size: 22px;
   font-weight: 400;
   word-spacing: 0.5em;
@@ -142,7 +143,7 @@ letter-spacing: 0.7em;
 
 .cover__image {
   position: absolute;
-  height: 757px;
+  height: 100%;
 }
 
 .overlay {
@@ -151,39 +152,84 @@ letter-spacing: 0.7em;
   background: #000;
   z-index: 1;
   width: 100%;
-  height: 757px;
+  height: 100%;
 }
 
 .lots {
   display: flex;
   flex-direction: column;
   padding: 180px 50px;
-  background: #FFF;
-  width: 100%;
-  height: 100%
   font-family: 'Raleway', 'Open Sans', sans-serif;
+  max-width: 1340px;
+  max-height: 579px;
 }
 
 .lots__heading {
-
+  display: flex;
+  padding: 0 0 27px 40px;
+  width: 100%;
+  font-size: 40px;
+  background: #FFF;
+font-weight: 700;
+padding-left: 40px;
 }
 
 .lots__card-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  gap: 25px;
+  min-width: 430px;
+  min-height: 450px;
+}
 
+.lots__card-list-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 430px;
+  max-height: 450px;
 }
 
 .card-link {
-
+  height: 100%;
 }
 
-.card_card_type_film {
+.card {
+  color: #FFF;
+}
 
+/* нужно вытащить текст поверх оверлэя*/
+.card_type_film {
+  height: 100%;
+  background-image: url(../images/card-lot-01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.card_type_book {
+  height: 100%;
+  background-image: url(../images/card-lot-02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .card__title {
-
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 26.4px */
+  text-decoration-line: underline;
+  text-transform: uppercase;
 }
 
 .card__text {
-  
+
+}
+
+.lots__look-more-link {
+  padding-left: 40px;
+  padding-top: 30px;
 }
