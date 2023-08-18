@@ -10,7 +10,6 @@
 }
 
 .header__menu {
-  display: grid;
   color: #000;
 }
 
@@ -26,7 +25,6 @@
 
 .header__links-list-item .header__link_active {
   text-decoration: none;
-  border-bottom: none;
 }
 
 .header__links-list-item_no-bullit {
@@ -34,11 +32,10 @@
 }
 
 .header__link {
-  text-decoration: none;
-  border-bottom: 1px solid #141414;
 }
 
 .header__logo {
+  display: flex;
   justify-self: center;
   width: 148px;
   height: 105px;
@@ -55,3 +52,10 @@
   flex-direction: column;
 }
 
+.cover {
+  padding: 0 50px;
+}
+
+.overlay {
+  background-image: url(../images/cover.jpg);
+}
