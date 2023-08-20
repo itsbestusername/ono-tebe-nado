@@ -321,3 +321,47 @@ gap: 100px;
   gap: 25px;
   text-transform: none;
 }
+
+.footer {
+
+}
+
+.footer__menu {
+
+}
+
+.footer__menu-list {
+
+}
+
+.footer__menu-list-item {
+
+}
+
+.footer__menu-link {
+
+}
+
+.footer__menu-link_active {
+
+}
+
+.footer__social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 240px;
+  max-height: 48px;
+}
+
+.footer__social-list-item {
+
+}
+
+.footer__social-link {
+
+}
+
+.footer__social-icon {
+
+}
